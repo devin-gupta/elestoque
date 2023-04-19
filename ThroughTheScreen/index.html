@@ -1,0 +1,388 @@
+<html>
+<head>
+  <title>Through the Screen</title>
+  <link rel="icon" href="https://d24cgw3uvb9a9h.cloudfront.net/zoom.ico">
+  <style>
+            /*   MOBILE   */
+        @media screen and (max-width: 1100px) {
+            #desktopmain {
+                display:none;
+            }
+            #mobilemain {
+                display:block;
+            }
+
+            #headerdesktop {
+                display:none;
+            }
+            #headermobile {
+                display:block;
+            }
+
+            #desktopgrid {
+                display:none;
+            }
+            #mobilegrid {
+                display:block;
+            }
+        }
+
+        /*   DESKTOP   */
+        @media screen and (min-width: 1100px) {    
+            #mobilemain {
+                display:none;
+            }
+            #desktopmain {
+                display: block;
+            }
+
+            #headermobile {
+                display:none;
+            }
+            #headerdesktop {
+                display: block;
+            }
+
+            #desktopgrid {
+                display:block;
+            }
+            #mobilegrid {
+                display:none;
+            }
+
+            #mobilefooter {
+                display:none;
+            }
+        }
+
+
+        h3 {
+            color:white;
+            position: absolute;
+        }
+
+
+        body {
+            background-color: black;
+            margin: 0px;
+        }
+
+        #desktopimg {
+            display: block;
+            margin: auto;
+            align-content: center;
+            width: auto;   
+            height: 100%;
+        }
+
+        #mobileimg {
+            display: block;
+            margin: auto;
+            align-content: center;
+            position: fixed;
+            width: 100%;   
+            height: auto;
+            z-index: 1;
+        }
+
+        #returnmobile {
+            float: left;
+            position: fixed;
+            top:0.9%;
+            left:76%;
+            /*margin-top: 54.2%;
+            margin-left: 88%;*/
+            height: 2%;
+            background-color: #0E71EB;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            font-size: 90%;
+            border-radius: 10px;
+            border:none;
+            padding:12px;
+            text-decoration: none;
+            z-index: 2;
+        }
+
+        #return {
+            position: absolute;
+            top:94.5%;
+            left:88%;
+            /*margin-top: 54.2%;
+            margin-left: 88%;*/
+            height: 2%;
+            background-color: #0E71EB;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            font-size: 90%;
+            border-radius: 10px;
+            border:none;
+            padding:10px;
+            text-decoration: none;
+        }
+
+        .h1desktop {
+            position: absolute;
+            top:3%;
+            left:6%;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            font-size: 150%;
+        }
+
+        .h2desktop {
+            position: absolute;
+            top:7%;
+            left:6%;
+            color: #0E71EB;
+            font-family: 'Lato', sans-serif;
+            font-weight: lighter;
+            font-size: 125%;
+        }
+
+        .h3desktop {
+            position: absolute;
+            top:11%;
+            left:6%;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            font-weight: lighter;
+            font-size: 75%;
+        }
+
+        #headermain {display:block;}
+        #headerstory2 {display: none;}
+        #headerstory3 {display: none;}
+        #headerstory4 {display: none;}
+        #headerstory5 {display: none;}
+        #headerstory6 {display: none;}
+
+        #desktopgrid {
+            position: absolute;
+            top:20%;
+            left:4.7%;
+            width: 95.3%;
+            height: auto;
+        }
+
+        #desktoprow1 img {
+            width: 31.5%;
+            height: auto;
+            opacity: 95%;
+        }
+
+        #desktoprow2 img {
+            width: 31.5%;
+            height: auto;
+            opacity: 95%;
+        }
+
+        #desktopgrid img:hover{
+            opacity: 100%;
+        }
+
+        #mobilegrid {
+            position: absolute;
+            top:7%;
+            /*left:3.5%;*/
+            width: auto;
+            height: 80%;
+        }
+
+        #mobilegrid img{
+            width: 100%;
+            height:auto;
+            opacity: 95%;
+        }
+
+        #mobilegrid img:hover{
+            opacity: 100%;
+        }
+
+        #buffer {
+            height: 10.8%;
+        }
+
+        #mobilefooter {
+            position: fixed;
+            z-index: 1;
+            top:91.5%;
+            width: 100%;
+            height: auto;
+        }
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <script>
+      function reset() {
+          document.getElementById("headermain").style.display = "block";
+          document.getElementById("headerstory1").style.display = "none";
+          document.getElementById("headerstory2").style.display = "none";
+          document.getElementById("headerstory3").style.display = "none";
+          document.getElementById("headerstory4").style.display = "none";
+          document.getElementById("headerstory5").style.display = "none";
+          document.getElementById("headerstory6").style.display = "none";
+      }
+
+      function story1() {
+          document.getElementById("headermain").style.display = "none";
+          document.getElementById("headerstory1").style.display = "block";
+          document.getElementById("headerstory2").style.display = "none";
+          document.getElementById("headerstory3").style.display = "none";
+          document.getElementById("headerstory4").style.display = "none";
+          document.getElementById("headerstory5").style.display = "none";
+          document.getElementById("headerstory6").style.display = "none";
+      }
+
+      function story2() {
+          document.getElementById("headermain").style.display = "none";
+          document.getElementById("headerstory1").style.display = "none";
+          document.getElementById("headerstory2").style.display = "block";
+          document.getElementById("headerstory3").style.display = "none";
+          document.getElementById("headerstory4").style.display = "none";
+          document.getElementById("headerstory5").style.display = "none";
+          document.getElementById("headerstory6").style.display = "none";
+      }
+
+      function story3() {
+          document.getElementById("headermain").style.display = "none";
+          document.getElementById("headerstory1").style.display = "none";
+          document.getElementById("headerstory2").style.display = "none";
+          document.getElementById("headerstory3").style.display = "block";
+          document.getElementById("headerstory4").style.display = "none";
+          document.getElementById("headerstory5").style.display = "none";
+          document.getElementById("headerstory6").style.display = "none";
+      }
+
+      function story4() {
+          document.getElementById("headermain").style.display = "none";
+          document.getElementById("headerstory1").style.display = "none";
+          document.getElementById("headerstory2").style.display = "none";
+          document.getElementById("headerstory3").style.display = "none";
+          document.getElementById("headerstory4").style.display = "block";
+          document.getElementById("headerstory5").style.display = "none";
+          document.getElementById("headerstory6").style.display = "none";
+      }
+
+      function story5() {
+          document.getElementById("headermain").style.display = "none";
+          document.getElementById("headerstory1").style.display = "none";
+          document.getElementById("headerstory2").style.display = "none";
+          document.getElementById("headerstory3").style.display = "none";
+          document.getElementById("headerstory4").style.display = "none";
+          document.getElementById("headerstory5").style.display = "block";
+          document.getElementById("headerstory6").style.display = "none";
+      }
+
+      function story6() {
+          document.getElementById("headermain").style.display = "none";
+          document.getElementById("headerstory1").style.display = "none";
+          document.getElementById("headerstory2").style.display = "none";
+          document.getElementById("headerstory3").style.display = "none";
+          document.getElementById("headerstory4").style.display = "none";
+          document.getElementById("headerstory5").style.display = "none";
+          document.getElementById("headerstory6").style.display = "block";
+      }
+
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113742544-48"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-113742544-48');
+      </script>
+</head>
+<body>
+
+
+    <div id="headerdesktop">
+        <div id="headermain">
+              <h1 class="h1desktop">Zoom school replaces in-person learning during pandemic</h1>
+              <h2 class="h2desktop">Examining various perspectives about instruction through a screen</h2>
+              <h3 class="h3desktop">By Michelle Chen, Sophia Chen, Krish Dev, Devin Gupta, Justine Ha, Tanish Mendki and Matthew Yoshimoto</h3>
+        </div>
+        <div id="headerstory1">
+            <h1 class="h1desktop">The freshman perspective</h1>
+            <h2 class="h2desktop">Exploring the experiences of freshmen this year compared to those of their upperclassmen siblings</h2>
+            <h3 class="h3desktop">By Suraj Gangaram, Graphic by Iman Malik and Anika Sharma</h3>
+        </div>
+        <div id="headerstory2">
+          <h1 class="h1desktop">The family perspective</h1>
+          <h2 class="h2desktop">Exploring the struggles that households face with working online</h2>
+          <h3 class="h3desktop">By Tanish Mendki, Graphic by Jannah Sheriff</h3>
+        </div>
+        <div id="headerstory3">
+          <h1 class="h1desktop">The wholesome perspective</h1>
+          <h2 class="h2desktop">Exploring teacher and student perspectives on Zoom school</h2>
+          <h3 class="h3desktop">By Sophia Chen and Justine Ha, Graphic by Sophia Ma</h3>
+        </div>
+        <div id="headerstory4">
+          <h1 class="h1desktop">The club perspective</h1>
+          <h2 class="h2desktop">Examining the new 2020 club application process and how existing clubs are adapting</h2>
+          <h3 class="h3desktop">By Michelle Chen, Graphic by Iman Malik</h3>
+        </div>
+        <div id="headerstory5">
+          <h1 class="h1desktop">The fatigue perspective</h1>
+          <h2 class="h2desktop">Students and staff explore methods of combating Zoom fatigue</h2>
+          <h3 class="h3desktop">By Matthew Yoshimoto, Graphic by Iman Malik</h3>
+        </div>
+        <div id="headerstory6">
+          <h1 class="h1desktop">The technology perspective</h1>
+          <h2 class="h2desktop">Exploring reactions to technology during distance learning</h2>
+          <h3 class="h3desktop">By Krish Dev, Graphic by Mikaylah Du</h3>
+        </div>
+    </div>
+
+
+
+    <div id="desktopmain">
+          <div>
+            <a href="https://elestoque.org/" target="_blank" id="return">Return to EE</a>
+            <img src="zoomimg.png" id="desktopimg">
+          </div>
+    </div>
+
+
+    <div id="desktopgrid">
+        <div id="desktoprow1">
+            <a href="https://mvelestoque.atavist.com/the-freshman-perspective" id="story1" onmouseover="story1()" onmouseout="reset()"><img src="img1.png"></a>
+          <a href="https://elestoque.atavist.com/thefamilyperspective" id="story2" onmouseover="story2()" onmouseout="reset()"><img src="img2.png"></a>
+          <a href="https://elestoque.atavist.com/the-wholesome-perspective-" id="story3" onmouseover="story3()" onmouseout="reset()"> <img src="img3.png"></a>
+          
+        </div>
+        <div id="desktoprow2">
+            <a href="https://elestoque.atavist.com/the-club-perspective" id="story4" onmouseover="story4()" onmouseout="reset()"><img src="img4.png"></a>
+          <a href="https://elestoque.atavist.com/the-fatigue-perspective" id="story5" onmouseover="story5()" onmouseout="reset()"><img src="img5.png"></a>
+          <a href="https://elestoque.atavist.com/the-technology-perspective" id="story6" onmouseover="story6()" onmouseout="reset()"><img src="img6.png"></a>
+        </div>
+    </div>
+
+
+
+    <div id="mobilemain">
+        <a href="https://elestoque.org/" target="_blank" id="returnmobile">Return to EE</a>
+        <img src="mobilefeatures.png" id="mobileimg">
+    </div>
+
+    <div id="mobilegrid">
+
+      <div class="mobilecolumn">
+        <a href="https://mvelestoque.atavist.com/the-freshman-perspective" target="_blank"><img src="img1.png"></a>
+        <a href="https://elestoque.atavist.com/thefamilyperspective" target="_blank"><img src="img2.png"></a>
+        <a href="https://elestoque.atavist.com/the-wholesome-perspective-" target="_blank"><img src="img3.png"></a>
+        <a href="https://elestoque.atavist.com/the-club-perspective" target="_blank"><img src="img4.png"></a>
+        <a href="https://elestoque.atavist.com/the-fatigue-perspective" target="_blank"><img src="img5.png"></a>
+        <a href="https://elestoque.atavist.com/the-technology-perspective" target="_blank"><img src="img6.png"></a>
+        <div id="buffer"></div>
+      </div>
+
+    </div>
+    <div>
+      <img src="mobilefeaturesfooter.png" alt="" id="mobilefooter">
+    </div>
+
+</body>
+</html>
