@@ -1,0 +1,324 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Course Selection Quiz </title>
+    <style media="screen">
+      body {
+        background-color: #FFF4C7;
+        padding: 25px 25px 25px 25px;
+      }
+
+      #EE {
+        float: left;
+
+            }
+
+      #EE a {
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 40px;
+        color: black;
+            }
+
+      #Title {
+        float: right;
+        padding: 0px 0px 0px 0px;
+      }
+
+      #Quiz {
+        background-color: ;
+        margin: 100px 500px 15px 50px;
+        width: 550px;
+        height: 450px;
+      }
+
+      #welcome {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: black;
+        text-align: ;
+      }
+
+      #welcome p {
+        margin: 50px 0px 30px 0px;
+      }
+
+      #getStarted {
+        background-color: #00AEFF; /* Green */
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        justify-content: center;
+        margin: 20px 100px 0px 0px;
+      }
+
+      /* QUESTION 1 */
+      #Q1 {display: none;}
+      #Q1num {display: none;}
+
+      /* QUESTION 2 */
+      #Q2 {display: none;}
+      #Q2num {display: none;}
+
+      /* QUESTION 3 */
+      #Q3 {display: none;}
+      #Q3num {display: none;}
+
+      /* QUESTION 4 */
+      #Q4 {display: none;}
+      #Q4num {display: none;}
+
+      /* QUESTION 5 */
+      #Q5 {display: none;}
+      #Q5num {display: none;}
+
+      /* QUESTION 6 */
+      #Q6 {display: none;}
+      #Q6num {display: none;}
+
+      /* QUESTION 7 */
+      #Q7 {display: none;}
+      #Q7num {display: none;}
+
+      /* QUESTION 8 */
+      #Q8 {display: none;}
+      #Q8num {display: none;}
+
+      /* QUESTION 9 */
+      #Q9 {display: none;}
+      #Q9num {display: none;}
+
+      /* QUESTION 10 */
+      #Q10 {display: none;}
+      #Q10num {display: none;}
+
+      /* FINALE */
+      #finale {
+        display: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: black;
+        text-align: ;
+      }
+
+      #finale p {
+        margin: 50px 0px 30px 0px;
+      }
+
+      #elective {
+        color: #F35336;
+      }
+
+
+
+      .Questionnum {
+        float: left;
+        font-size: 75px;
+        color: #00AEFF;
+        font-weight: 900;
+        padding: 10px 10px 10px 10px;
+        margin: 10px 10px 10px 10px;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .Quiz_Questions h1 {
+        padding: 27px 10px 10px 10px;
+        margin: 0px 0px 20px 0px;
+        vertical-align: baseline;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+      }
+
+      .Quiz_Questions button {
+        background-color: white;
+        margin: 20px 10px 10px 80px;
+        padding: 0px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        float: left;
+        outline: 0;
+
+        transition: 0.5s;
+        border: 5px solid #FF2300;
+      }
+
+      .Quiz_Questions button:hover {
+        background-color: #00AEFF;
+        margin: 20px 10px 10px 80px;
+        padding: 0px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        float: left;
+        outline: 0;
+
+        border: none;
+      }
+
+      .Quiz_Questions p {
+        padding: 27px 0px 20px 0px;
+        margin: 0px 0px 0px 150px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400`;
+        font-size: 20px;
+        width: 250px;
+
+      }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113742544-48"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-113742544-48');
+    </script>
+
+  </head>
+  <body>
+    <div id="EE">
+          <a href="https://elestoque.org/" target="_blank"> E | E </a>
+    </div>
+    <img id="Title" src="The.png" alt="The">
+    <div id="Quiz">
+      <div id="welcome">
+        <h1> Welcome to the <br> Elective Selection Quiz!</h1>
+        <p> This quiz aims to help you learn about yourself and suggest electives that you might want to take. </p>
+        <button href="#" onclick="start()" id="getStarted"> Get Started ! </button>
+      </div>
+      <!--QUESTION 1-->
+      <h1 id="Q1num" class="Questionnum"> 1. </h1>
+      <div id="Q1" class="Quiz_Questions">
+        <h1> Would you rather play charades or trivia? </h1>
+          <button href="#" onclick="bttn11()" id="b11"> </button>
+          <p> Charades </p>
+          <button href="#" onclick="bttn12()" id="b12"> </button>
+          <p> Trivia </p>
+      </div>
+
+      <!--QUESTION 2-->
+      <h1 id="Q2num" class="Questionnum"> 2. </h1>
+      <div id="Q2" class="Quiz_Questions">
+        <h1> Your groupmate isn’t doing enough work: how do you respond? </h1>
+          <button href="#" onclick="bttn21()" id="b21"> </button>
+          <p> Confronting them about it </p>
+          <button href="#" onclick="bttn22()" id="b22"> </button>
+          <p> Do all the work yourself </p>
+          <button href="#" onclick="bttn23()" id="b23"> </button>
+          <p> Talk to the teacher </p>
+      </div>
+
+      <!--QUESTION 3-->
+      <h1 id="Q3num" class="Questionnum"> 3. </h1>
+      <div id="Q3" class="Quiz_Questions">
+        <h1> How knowledgeable are you about world news? I know about the…  </h1>
+          <button href="#" onclick="bttn31()" id="b31"> </button>
+          <p> World war 3 tik toks </p>
+          <button href="#" onclick="bttn32()" id="b32"> </button>
+          <p> Assassination of an Iranian general </p>
+          <button href="#" onclick="bttn33()" id="b33"> </button>
+          <p> History of Iran from the 1980s </p>
+      </div>
+
+      <!--QUESTION 4-->
+      <h1 id="Q4num" class="Questionnum"> 4. </h1>
+      <div id="Q4" class="Quiz_Questions">
+        <h1> In freshman biology, did you cut open the pig or take notes? </h1>
+          <button href="#" onclick="bttn41()" id="b41"> </button>
+          <p> I cut open the pig. </p>
+          <button href="#" onclick="bttn42()" id="b42"> </button>
+          <p> I took notes. </p>
+      </div>
+
+      <!--QUESTION 5-->
+      <h1 id="Q5num" class="Questionnum"> 5. </h1>
+      <div id="Q5" class="Quiz_Questions">
+        <h1> Would you rather join the cross country team or the economics club? </h1>
+          <button href="#" onclick="bttn51()" id="b51"> </button>
+          <p> The cross country team </p>
+          <button href="#" onclick="bttn52()" id="b52"> </button>
+          <p> The economics club </p>
+      </div>
+
+      <!--QUESTION 6-->
+      <h1 id="Q6num" class="Questionnum"> 6. </h1>
+      <div id="Q6" class="Quiz_Questions">
+        <h1> Class is boring and you are looking for something to do. What do you do? </h1>
+          <button href="#" onclick="bttn61()" id="b61"> </button>
+          <p> Chat with your friends </p>
+          <button href="#" onclick="bttn62()" id="b62"> </button>
+          <p> Doodle on your paper </p>
+      </div>
+
+      <!--QUESTION 7-->
+      <h1 id="Q7num" class="Questionnum"> 7. </h1>
+      <div id="Q7" class="Quiz_Questions">
+        <h1> How many school dances do you attend a year? </h1>
+          <button href="#" onclick="bttn71()" id="b71"> </button>
+          <p> I don't go to dances. </p>
+          <button href="#" onclick="bttn72()" id="b72"> </button>
+          <p> Maybe 1 or 2 dances </p>
+          <button href="#" onclick="bttn73()" id="b73"> </button>
+          <p> All of them </p>
+      </div>
+
+      <!--QUESTION 8-->
+      <h1 id="Q8num" class="Questionnum"> 8. </h1>
+      <div id="Q8" class="Quiz_Questions">
+        <h1> You are out on a walk and you see a pretty flower, do you: </h1>
+          <button href="#" onclick="bttn81()" id="b81"> </button>
+          <p> Walk past it </p>
+          <button href="#" onclick="bttn82()" id="b82"> </button>
+          <p> Take an aesthetic picture </p>
+          <button href="#" onclick="bttn83()" id="b83"> </button>
+          <p> Think of the science </p>
+      </div>
+
+      <!--QUESTION 9-->
+      <h1 id="Q9num" class="Questionnum"> 9. </h1>
+      <div id="Q9" class="Quiz_Questions">
+        <h1> Are you called an expert on a few specific topics or a jack-of-all-trades? </h1>
+          <button href="#" onclick="bttn91()" id="b91"> </button>
+          <p> An expert </p>
+          <button href="#" onclick="bttn92()" id="b92"> </button>
+          <p> A jack-of-all-trades </p>
+      </div>
+
+      <!--QUESTION 10-->
+      <h1 id="Q10num" class="Questionnum"> 10. </h1>
+      <div id="Q10" class="Quiz_Questions">
+        <h1> Which of the following sounds the most interesting? </h1>
+          <button href="#" onclick="bttn101()" id="b101"> </button>
+          <p> Building a table </p>
+          <button href="#" onclick="bttn102()" id="b102"> </button>
+          <p> Coding an email responder </p>
+          <button href="#" onclick="bttn103()" id="b103"> </button>
+          <p> Experimenting with microorganisms in a lab </p>
+      </div>
+
+      <!-- FINALE -->
+      <div id="finale">
+        <h1>Congrats ! Ready to see your elective? </h1>
+        <p> We determined your elective based on a variety of factors including your interest in the following categories : Hands-On activities, your Grind capabilities, Creativity, Academics, and your Social aptitude. <br> <br> <br> Your elective is:  </p>
+        <h1 id="elective"></h1>
+        <button href="#" onclick="reset()" id="getStarted"> Have your friends take the quiz ! </button>
+      </div>
+    </div>
+
+
+
+
+
+    <script src="courseselection.js"></script>
+  </body>
+</html>
